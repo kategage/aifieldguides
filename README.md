@@ -19,7 +19,9 @@ Plain-language field guides to the politics of AI, by Kate Gage. Static site on 
 `_hgi-redirects/` starts with an underscore, so GitHub Pages does not publish it.
 
 ## Brand
-Ink #0F1F1A, signal orange #F26B3A (text-safe #B8401A on white), sage #EEF2EC. Archivo for headings, IBM Plex Sans for body, IBM Plex Mono for small labels.
+Colors follow the CIL palette (no CIL name or logo). Deep green #003A40 is the ink, red #F9423A the accent (text-safe #C42A22 on light), on a warm paper #FBF8F3. Secondary accents: purple #7474C1, teal #00968F, yellow #F0B323, peach #FF8D6D. Faction and camp colors in the guides are data colors and stay separate.
+
+Schibsted Grotesk for headings, Figtree for body. Map motif: folded-map logo mark, map grid, dotted trails, scale bars, and the animated hero map in `assets/map-light.svg` / `assets/map-dark.svg` (it respects reduced motion).
 
 ## Analytics
 Pages still load the existing GTM container (GTM-KJ48VZZ5). Swap the ID in each page if this site gets its own container.

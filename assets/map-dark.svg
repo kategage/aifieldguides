@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid meet">
+<style>
+.topo{animation:drift 22s ease-in-out infinite}
+.topo2{animation:drift 28s ease-in-out infinite reverse}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-8px,6px)}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 12s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:1}35%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+.route{animation:fade 12s ease-in-out infinite}
+@keyframes fade{0%,88%{opacity:1}96%,100%{opacity:0}}
+.ring{transform-origin:430px 178px;animation:ping 2.8s ease-out infinite}
+@keyframes ping{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.pin{transform-origin:430px 178px;animation:bob 4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.draw{stroke-dashoffset:0}}
+</style>
+<defs><mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="600" height="500"><path class="draw" d="M30 470C90 430 110 360 190 350S300 380 330 300 380 200 430 178" pathLength="1" fill="none" stroke="#fff" stroke-width="14"/></mask></defs>
+<g fill="none" stroke="#AFC9C6" stroke-width="1.3" opacity=".22">
+<g class="topo"><path d="M150 0C150 80 90 140 10 150C-80 160-160 100-150 10C-140-80-70-150 20-145C110-140 150-80 150 0Z" transform="translate(430 190) rotate(-12) scale(1.25)" vector-effect="non-scaling-stroke"/><path d="M150 0C150 80 90 140 10 150C-80 160-160 100-150 10C-140-80-70-150 20-145C110-140 150-80 150 0Z" transform="translate(430 190) rotate(-12) scale(1.02)" vector-effect="non-scaling-stroke"/><path d="M150 0C150 80 90 140 10 150C-80 160-160 100-150 10C-140-80-70-150 20-145C110-140 150-80 150 0Z" transform="translate(430 190) rotate(-12) scale(0.8)" vector-effect="non-scaling-stroke"/><path d="M150 0C150 80 90 140 10 150C-80 160-160 100-150 10C-140-80-70-150 20-145C110-140 150-80 150 0Z" transform="translate(430 190) rotate(-12) scale(0.6)" vector-effect="non-scaling-stroke"/><path d="M150 0C150 80 90 140 10 150C-80 160-160 100-150 10C-140-80-70-150 20-145C110-140 150-80 150 0Z" transform="translate(430 190) rotate(-12) scale(0.4)" vector-effect="non-scaling-stroke"/><path d="M150 0C150 80 90 140 10 150C-80 160-160 100-150 10C-140-80-70-150 20-145C110-140 150-80 150 0Z" transform="translate(430 190) rotate(-12) scale(0.2)" vector-effect="non-scaling-stroke"/></g>
+<g class="topo2"><path d="M130 10C120 90 40 120-30 110C-110 100-140 40-125-30C-110-100-30-125 40-115C110-105 138-50 130 10Z" transform="translate(160 380) rotate(18) scale(0.95)" vector-effect="non-scaling-stroke"/><path d="M130 10C120 90 40 120-30 110C-110 100-140 40-125-30C-110-100-30-125 40-115C110-105 138-50 130 10Z" transform="translate(160 380) rotate(18) scale(0.72)" vector-effect="non-scaling-stroke"/><path d="M130 10C120 90 40 120-30 110C-110 100-140 40-125-30C-110-100-30-125 40-115C110-105 138-50 130 10Z" transform="translate(160 380) rotate(18) scale(0.5)" vector-effect="non-scaling-stroke"/><path d="M130 10C120 90 40 120-30 110C-110 100-140 40-125-30C-110-100-30-125 40-115C110-105 138-50 130 10Z" transform="translate(160 380) rotate(18) scale(0.28)" vector-effect="non-scaling-stroke"/></g>
+</g>
+<g class="route">
+<path d="M30 470C90 430 110 360 190 350S300 380 330 300 380 200 430 178" fill="none" stroke="#F9423A" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 11" mask="url(#m)"/>
+</g>
+<circle cx="30" cy="470" r="8" fill="#00968F" stroke="#FBF8F3" stroke-width="2.5"/>
+<rect x="179" y="339" width="22" height="22" rx="3" transform="rotate(45 190 350)" fill="#F0B323" stroke="#FBF8F3" stroke-width="2.5"/>
+<path d="M330 286 344 310H316Z" fill="#7474C1" stroke="#FBF8F3" stroke-width="2.5" stroke-linejoin="round"/>
+<circle class="ring" cx="430" cy="178" r="16" fill="none" stroke="#F9423A" stroke-width="2.5"/>
+<g class="pin"><path d="M430 178c-4-12-18-22-18-38a18 18 0 0 1 36 0c0 16-14 26-18 38Z" fill="#F9423A" stroke="#FBF8F3" stroke-width="2.5" stroke-linejoin="round"/><circle cx="430" cy="140" r="6.5" fill="#FBF8F3"/></g>
+</svg>

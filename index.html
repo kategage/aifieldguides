@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJ48VZZ5');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Field Guides: maps for the politics of AI</title>
+<meta name="description" content="Plain-language field guides to who is shaping AI policy, who is paying for it, and what they believe. For organizers, campaigns, state legislators, and funders.">
+<link rel="canonical" href="https://aifieldguides.org/">
+<meta property="og:url" content="https://aifieldguides.org/">
+<meta property="og:title" content="AI Field Guides">
+<meta property="og:description" content="Plain-language field guides to who is shaping AI policy, who is paying for it, and what they believe.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0F1F1A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..900&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0F1F1A; --signal:#F26B3A; --signal-text:#B8401A; --sage:#EEF2EC; --line:#D5DED8;
+  --bg:#FFFFFF; --text:#0F1F1A; --muted:#3F5550; --card:#FFFFFF; --edge:#0F1F1A; --dash:#7C918A;
+  --hero-lede:#CFE0D8; --contour:#9FC2B4;
+  color-scheme:light; box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1512; --text:#E6EFEA; --muted:#A3B8AE; --card:#10201B; --edge:#5E7D71; --sage:#10201B; --line:#24372F; --dash:#5E7D71; --signal-text:#F58A60;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1512; --text:#E6EFEA; --muted:#A3B8AE; --card:#10201B; --edge:#5E7D71; --sage:#10201B; --line:#24372F; --dash:#5E7D71; --signal-text:#F58A60;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"Archivo",system-ui,sans-serif;font-stretch:112%;font-weight:800;margin:0;line-height:1.1;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+
+.top{background:var(--ink);color:#fff;border-bottom:1px solid #2A3D36;padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:14px}
+.mark{display:inline-flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:900;font-size:18px;letter-spacing:.03em;text-transform:uppercase;padding:6px 0}
+.mark svg{width:32px;height:32px;flex:none}
+.top nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;font-weight:500}
+.top nav a{color:#fff;text-decoration:none;padding:10px 0}
+.top nav a:hover{text-decoration:underline;text-decoration-color:var(--signal);text-decoration-thickness:2px;text-underline-offset:5px}
+.top nav a.btn{padding:10px 18px}
+
+.btn{display:inline-block;background:var(--signal);color:var(--ink)!important;text-decoration:none;font-weight:600;padding:15px 28px;border:2px solid var(--signal)}
+.btn:hover{background:#FF8456;border-color:#FF8456}
+.btn.ghost{background:transparent;color:#fff!important;border-color:#5E7D71}
+.btn.ghost:hover{border-color:#fff}
+
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero svg.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.22;pointer-events:none}
+.hero .wrap{position:relative;padding-block:104px 120px;display:flex;flex-direction:column;gap:28px}
+.kicker{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:14px;letter-spacing:.08em;color:var(--signal)}
+.hero h1{font-size:clamp(44px,6.6vw,88px);line-height:.98;letter-spacing:-.02em;max-width:14ch}
+.hero .lede{font-size:clamp(19px,2vw,22px);line-height:1.55;max-width:40em;color:var(--hero-lede)}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+
+section.guides .wrap{padding-block:96px 88px;display:flex;flex-direction:column;gap:40px}
+.sec-head{display:flex;flex-wrap:wrap;gap:12px 40px;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--edge);padding-bottom:20px}
+.sec-head h2{font-size:clamp(32px,3.6vw,46px)}
+.sec-head p{color:var(--muted);max-width:460px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.card{display:flex;flex-direction:column;border:2px solid var(--edge);background:var(--card)}
+.card .tab{display:flex;justify-content:space-between;gap:12px;padding:14px 24px;border-bottom:2px solid var(--edge);font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600}
+.card .body{padding:28px 24px;display:flex;flex-direction:column;gap:14px;flex-grow:1}
+.card .big{font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:900;font-size:52px;line-height:1}
+.card .big small{font-size:20px;font-weight:800;margin-left:10px;letter-spacing:.04em;text-transform:uppercase}
+.card h3{font-size:25px;line-height:1.2}
+.card p{color:var(--muted)}
+.card .go{margin-top:auto;align-self:flex-start;font-weight:600;padding:12px 0;text-decoration:underline;text-decoration-color:var(--signal);text-decoration-thickness:3px;text-underline-offset:6px}
+.card.soon{border:2px dashed var(--dash);background:var(--sage)}
+.card.soon .tab{border-bottom:2px dashed var(--dash);color:var(--muted)}
+.card.soon .big{color:var(--muted)}
+
+section.who{background:var(--sage)}
+section.who .wrap{padding-block:80px;display:flex;flex-direction:column;gap:36px}
+section.who h2,section.about h2{font-size:clamp(28px,3vw,38px)}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.trio div{border-top:3px solid var(--signal);padding-top:18px;display:flex;flex-direction:column;gap:10px}
+.trio h3{font-size:21px}
+.trio p{color:var(--muted)}
+
+section.about .wrap{padding-block:88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:start}
+.about-copy{display:flex;flex-direction:column;gap:16px;font-size:18px;line-height:1.65}
+.about-copy p{color:var(--muted)}
+.tips{background:var(--ink);color:#fff;padding:32px;display:flex;flex-direction:column;gap:14px;border-top:6px solid var(--signal)}
+.tips h3{font-size:24px}
+.tips p{color:var(--hero-lede)}
+.tips .btn{align-self:flex-start;padding:13px 22px;font-size:16px;overflow-wrap:anywhere}
+
+footer{background:var(--ink);color:var(--hero-lede);padding-bottom:env(safe-area-inset-bottom,0px)}
+footer .wrap{padding-block:32px;display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;font-size:15px}
+footer .fine{font-family:"IBM Plex Mono",monospace}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 24px}
+footer a{color:#fff;padding:10px 0;display:inline-block}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ48VZZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#fff" stroke-width="1.6"/><circle cx="17" cy="17" r="9.5" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2 2.4"/><path d="M17 4 20.5 17 17 30 13.5 17Z" fill="#F26B3A"/></svg>AI Field Guides</a>
+    <nav aria-label="Site">
+      <a href="#guides">Guides</a>
+      <a href="#about">About</a>
+      <a class="btn" href="https://kategage.substack.com">Subscribe</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <svg class="topo" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#9FC2B4" stroke-width="1.2"><path d="M620 520 C700 380 860 330 980 380 S1180 520 1260 470"/><path d="M600 470 C690 330 860 270 990 320 S1190 450 1260 410"/><path d="M590 420 C690 280 870 210 1000 260 S1200 380 1260 350"/><path d="M600 370 C710 230 880 150 1010 200 S1210 310 1260 290"/><path d="M630 320 C740 180 900 100 1030 140 S1220 240 1260 230"/><path d="M680 270 C780 140 920 60 1050 90 S1220 170 1260 170"/><path d="M760 220 C840 110 950 30 1060 50 S1210 100 1260 110"/><ellipse cx="1010" cy="420" rx="70" ry="34"/><ellipse cx="1010" cy="420" rx="36" ry="16"/></g><g stroke="#9FC2B4" stroke-width="1" opacity=".5"><line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="300" y1="0" x2="300" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/><line x1="900" y1="0" x2="900" y2="600"/></g></svg>
+  <div class="wrap">
+    <p class="kicker">Field notes on the politics of AI</p>
+    <h1>Know the terrain before you&nbsp;move.</h1>
+    <p class="lede">Plain-language guides to who is shaping AI policy, who is paying for it, and what they believe. For organizers, campaigns, state legislators, and funders.</p>
+    <div class="ctas">
+      <a class="btn" href="#guides">Browse the guides</a>
+      <a class="btn ghost" href="https://kategage.substack.com">Read the Substack</a>
+    </div>
+  </div>
+</section>
+
+<section class="guides" id="guides">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The guides</h2>
+      <p>Living documents, updated as the money moves and the coalitions shift.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="tab"><span>Guide 01</span><span>Politics</span></div>
+        <div class="body">
+          <p class="big">6<small>factions</small></p>
+          <h3>The AI Factions: A Political Field Guide</h3>
+          <p>Tech Right, AI Safety, AI Ethics, AI Populists, MAGA Populists, and Pragmatists. What each believes, who funds it, where it stands on policy, and where unlikely alliances form. Updated after the 2026 midterms.</p>
+          <a class="go" href="/factions/">Open the factions guide</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="tab"><span>Guide 02</span><span>Philanthropy</span></div>
+        <div class="body">
+          <p class="big">7<small>camps</small></p>
+          <h3>AI Philanthropy Field Guide</h3>
+          <p>Who funds AI’s future, and what they believe. Foundations and new tech wealth sorted by worldview, where their grants land, and a decoder for the words funders use.</p>
+          <a class="go" href="/philanthropy/">Open the philanthropy guide</a>
+        </div>
+      </article>
+      <article class="card soon">
+        <div class="tab"><span>Guide 03</span><span>In progress</span></div>
+        <div class="body">
+          <p class="big">Next</p>
+          <h3>More guides are on the way</h3>
+          <p>New maps of the AI political landscape are in the works. Subscribe to hear when the next one is out.</p>
+          <a class="go" href="https://kategage.substack.com">Get updates</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="who">
+  <div class="wrap">
+    <h2>Who they’re for</h2>
+    <div class="trio">
+      <div><h3>Organizers and campaigns</h3><p>Know who is spending in your race, what they want, and which allies share your ground.</p></div>
+      <div><h3>Legislators and staff</h3><p>Read the coalitions behind the bills in front of you, and the vocabulary each side uses.</p></div>
+      <div><h3>Funders</h3><p>See where peer money is going, which camps it serves, and where the gaps are.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-copy">
+      <h2>About</h2>
+      <p>AI Field Guides are written by Kate Gage. They started as research for her own work with campaigns and advocates, and grew into public resources as more people asked for the map.</p>
+      <p>Figures come from FEC filings, 990s, and public trackers, and are dated where they appear.</p>
+    </div>
+    <div class="tips">
+      <h3>Spot something we missed?</h3>
+      <p>Corrections, tips, and new players are welcome. The guides get better with every reader who writes in.</p>
+      <a class="btn" href="mailto:kate@higherground.institute">kate@higherground.institute</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fine">aifieldguides.org © 2026</p>
+    <nav aria-label="Footer"><a href="/factions/">Factions</a><a href="/philanthropy/">Philanthropy</a><a href="https://kategage.substack.com">Substack</a></nav>
+  </div>
+</footer>
+</body>
+</html>
